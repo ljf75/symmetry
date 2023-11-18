@@ -1,0 +1,6 @@
+export const TheCanvas = document.querySelector('canvas')
+export const gl = TheCanvas.getContext('webgl')
+gl.enable(gl.DEPTH_TEST)
+gl.enable(gl.BLEND)
+gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)
+gl.enableVertexAttribArray(0)
